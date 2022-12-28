@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* review */
+#review{width: 100%; padding: 120px 0;}
+#review h2{text-align: center;}
+#review .swiper{padding-bottom: 30px;}
+#review .swiper-slide{
+    width: 280px; border-radius: 10px; overflow: hidden; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);}
+#review a, #review a > img{display: block; width: 280px; height: 240px;}
+#review .textWrap{width: 100%; padding: 16px;}
+#review .tourName{display: block; width: 100%; height: 16px; margin-bottom: 16px; font-size: 0.75rem; font-weight: 500; }
+#review .tourName img{position: relative; top: 2px; width: 16px;}
+#review h5{width: 100%; height: 24px; color: #333;  margin-bottom: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+#review p{width: 100%; height: 48px; margin-bottom: 16px; overflow: hidden; font-size: 0.875rem; line-height: 24px; text-align: justify; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+
+#review hr{margin-bottom: 16px; border:0; height: 1px; background-color: #ccc;}
+#review .bottomWrap{width: 100%; display: flex; justify-content: space-between;}
+#review .starScore{color: #333;}
+#review .star{color: #FF8A3C; font-weight: 700;}
+#review .date{color: #999; font-size: 0.875rem;}
+ 
+
+/* desktop */
+@media screen and (min-width:1024px){
+    #review{padding:120px 0 110px}
+    #review .innerWrap{position: relative; width: 1228px;}
+    #review .swiper{ padding: 0 8px 10px;}
+    #review .swiper-pagination{display: none;}
+    #review .swiper-button-next, #review .swiper-button-prev{display: none; margin-top: 0; top:295px;}
+    #review .swiper-button-next{right: -25px;}
+    #review .swiper-button-prev{left: -25px;}
+    #review .swiper-button-next::after, #review .swiper-button-prev::after{color: #333; font-weight: 700; }
+}
+
+/* large desktop */
+@media screen and (min-width:1280px){
+    #review .swiper-button-next, #review .swiper-button-prev{display: block;}
+}
+
+
+/* tablet & mobile */
+@media screen and (max-width:1023px) {
+    #review{ padding: 60px 0;}
+    #review .innerWrap{ padding: 0;}
+    #review .swiper-slide{opacity: 0.5;}
+    #review .swiper-slide-active{opacity: 1;}
+    #review .swiper-pagination{height: 10px;}
+    #review .swiper-pagination-bullet{box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);}
+    #review .swiper-pagination-bullet-active{background-color: #0957c3;}
+    #review .swiper-button-next, #review .swiper-button-prev{display: none;}
+}
+
+/* iphone5 */
+@media screen and (max-width:320px){
+    #review .swiper-slide{width: 240px;}
+    #review a, #review a > img{width: 240px; height: 205px;}
+}

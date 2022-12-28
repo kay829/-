@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import url(popup.css);
+@import url(main.css);
+@import url(vision.css);
+@import url(best.css);
+@import url(movie.css);
+@import url(recruit.css);
+@import url(review.css);
+@import url(board.css);
+
+
+/* direct btn */
+.directBtn{display: inline-block; padding: 15px 30px; border: 1px solid #0957c3; background-color: #fff; font-size: 1.125rem; color: #0957c3; font-weight: 700; transition: 0.3s;}
+.directBtn::after{content: url(../images/main/btn_arrow_blue.svg); margin-left: 10px; position: relative; top: -5px;}
+.directBtn:hover{background-color: #0957c3; border: 1px solid #fff; color: #fff;}
+.directBtn:hover::after{content: url(../images/main/btn_arrow_white.svg);}
+
+/* directReverseBtn */
+.directReverseBtn{display: inline-block; padding: 15px 30px; border: 1px solid #fff; background-color: #0957c3; font-size: 1.125rem; color: #fff; font-weight: 700; transition: 0.3s;}
+.directReverseBtn::after{content: url(../images/main/btn_arrow_white.svg); margin-left: 10px; position: relative; top: -5px;}
+.directReverseBtn:hover{background-color: #fff; border: 1px solid #0957c3; color: #0957c3;}
+.directReverseBtn:hover::after{content: url(../images/main/btn_arrow_blue.svg);}
+
+
+/* more */
+.more{position: absolute; right: 16px; top: 10px; height: 30px; color: #0957c3; font-size: 1.125rem; font-weight: 700; line-height: 30px;}
+.more::after{position: relative; top: 3px; margin-left: 10px; content: url(../images/main/more_btn_blue.svg);}
+
+
+@media screen and (min-width: 1024px) {
+    h2{margin-bottom: 50px; color: #333; font-size: 48px; font-family: 'GmarketSans';}
+    h3{color: #333; font-size: 24px;}
+    h4{color: #333; font-size: 18px;}
+    
+}
+@media screen and (max-width: 1023px) {
+    h2{margin-bottom: 20px; color: #333; font-size: 40px; font-family: 'GmarketSans';}
+    h3{color: #333; font-size: 24px;}
+    h4{color: #333; font-size: 18px;}
+
+    .more{top: 5px;}
+
+}
+@media screen and (max-width: 500px) {
+    h2{margin-bottom: 20px; color: #333; font-size: 2.25rem; font-family: 'GmarketSans';}
+    h3{color: #333; font-size: 1.25rem;}
+    h4{color: #333; font-size: 1.15rem;}
+
+    .more{top: 0;}
+}
+@media screen and (max-width: 320px) {
+    .more::after{content: url(../images/main/more_btn_blue_small.svg);}
+    .more{top: -3px;}
+}

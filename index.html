@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EuroBike Tour</title>
+
+        <!-- favicon&icon -->
+        <link rel="shortcut icon" href="images/common/favicon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="images/common/icon_ios.png" sizes="180x180">
+        <link rel="icon" href="images/common/icon_android.png" sizes="192x192">
+
+        <!-- CSS연결 -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- JS연결 -->
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="popup">
+            <div class="popupWrap">
+                <div class="imgWrap">
+                    <img src="images/main/popup_bg.jpg" alt="팝업이미지">
+                    <img src="images/common/header_logo.svg" alt="유로바이크투어로고">
+                </div>
+                <div class="textWrap">
+                    <h3>Notice</h3>
+                    <p>
+                        본 사이트는 상업적 목적이 아닌 <span class="mainColor">개인 포트폴리오 용도</span>로 만들어 졌습니다. 홈페이지 일부 내용과 이미지 등은 그 <span class="mainColor">출처가 따로 있음</span>을 밝힙니다.
+                    </p>
+                    <p>
+                        본 사이트는 <span class="mainColor">HTML5</span>와 <span class="mainColor">CSS3</span>를 기준으로 하여 데스크탑, 태블릿, 모바일의 브라우저에 맞춘 <span class="mainColor">반응협 웹</span> 홈페이지입니다.
+                    </p>
+                </div>
+                <ul>
+                    <li><a href="#" class="expire">오늘 하루 안보기</a></li>
+                    <li><a href="#" class="close">닫기</a></li>
+                </ul>
+            </div>
+        </div>
+        <header id="header">
+            <div class="innerWrap">
+                <a href="#" class="panelIcon" title="패널열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <h1><a href="index.html"><img src="images/common/header_logo.svg" alt="유로바이크투어로고"></a></h1>
+                <a href="#" class="searchICon" title="검색창열기"><img src="images/common/header_search_icon.svg" alt="검색아이콘"></a>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="#" class="mainNav">회사소개</a>
+                            <ul class="subNav">
+                                <li><a href="#">회사개요</a></li>
+                                <li><a href="#">기업문화</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">수상내역</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">현지투어</a>
+                            <ul class="subNav">
+                                <li><a href="#">이탈리아</a></li>
+                                <li><a href="#">프랑스</a></li>
+                                <li><a href="#">스페인</a></li>
+                                <li><a href="#">영국</a></li>
+                                <li><a href="#">기타</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">홍보센터</a>
+                            <ul class="subNav">
+                                <li><a href="#">보도자료</a></li>
+                                <li><a href="#">소셜채널</a></li>
+                                <li><a href="#">투어영상</a></li>
+                                <li><a href="#">CI</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">인재채용</a>
+                            <ul class="subNav">
+                                <li><a href="#">인재상</a></li>
+                                <li><a href="#">인사제도</a></li>
+                                <li><a href="#">채용정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="mainNav">고객지원</a>
+                            <ul class="subNav">
+                                <li><a href="#">투어영상</a></li>
+                                <li><a href="#">여행자보험</a></li>
+                                <li><a href="#">고객상담</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="tNav">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="images/main/main_img_01.png" alt="베네치아 이미지">
+                            <figcaption>
+                                <div class="tableCell">
+                                    <img src="images/main/logo_icon.svg" alt="유로바이크 로고아이콘">
+                                    <h5>베네치아 프라이빗<br>노을 야경<br class="none">투어(11~1월)</h5>
+                                    <p>아름다운 베네치아의 노을과 야경을<br class="none">안전하게 둘러보는 투어</p>
+                                    <a href="#">FIND OUT MORE</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="images/main/main_img_02.png" alt="몽생미쉘 이미지">
+                            <figcaption>
+                                <div class="tableCell">
+                                    <img src="images/main/logo_icon.svg" alt="유로바이크 로고아이콘">
+                                    <h5>몽생미쉘(동절기)<br>1박 2일<br class="none">투어(12월~2월)</h5>
+                                    <p>프랑스 북서부 “노르망디”의 아름다운<br class="none">소도시들을 1박 2일동안 편하고 재밌있게!</p>
+                                    <a href="#">FIND OUT MORE</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure>
+                            <img src="images/main/main_img_03.png" alt="그라나다 이미지">
+                            <figcaption>
+                                <div class="tableCell">
+                                    <img src="images/main/logo_icon.svg" alt="유로바이크 로고아이콘">
+                                    <h5>스페인 그라나다<br>환상 야경<br class="none">투어(11월~2월)</h5>
+                                    <p>그라나다의 알함브라 궁전과 시내 전경을<br class="none">볼 수 있는 안전하고 재미있는 야경투어</p>
+                                    <a href="#">FIND OUT MORE</a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="swiper-button-next"><span class="text">next</span></div>
+                <div class="swiper-button-prev"><span class="text">prev</span></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </main>
+
+        <section id="vision">
+            <h2>Euro Bike <span class="none">Tour </span>Vision</h2>
+            <p>
+                유럽 전문 여행사 ㈜유로바이크투어는<br>
+                <span class="none">기존의 획일화 되고 소모적인 여행문화를 탈피하고<br></span>
+                새로운 선진형 여행 문화 서비스를 제공합니다.
+            </p>
+            <a href="#" class="directBtn">회사소개 바로가기</a>
+        </section>
+        <section id="best">
+            <div class="innerWrap">
+                <h2>Best Tour</h2>
+                <a href="#" class="more">바로가기</a>
+                <div class="tabBox">
+                    <ul class="tabBtn">
+                        <li><a href="#">이태리<span class="none">/남부</span></a></li>
+                        <li><a href="#">스페인<span class="none">/그라나다</span></a></li>
+                        <li><a href="#">프랑스<span class="none">/몽생미쉘</span></a></li>
+                        <li class="england"><a href="#">영국/런던</a></li>
+                        <li><a href="#">그리스<span class="none">/아테나</span></a></li>
+                    </ul>
+                    <div class="contentsWrap">
+                        <div>
+                            <div class="imgWrap"><img src="images/main/best_banenr_01.png" alt="이태리/남부이미지"></div>
+                            <div class="textWrap">
+                                <h3>이태리남부 환상투어</h3>
+                                <p>
+                                    <span class="none">
+                                        투어코스 : 로마출발 → 폼페이 → 소렌토전망대 → 포지타노 → 로마도착<br>
+                                        여행일정 : 원데이 - 투어날짜는 자세히보기를 눌러 선택하세요.<br>
+                                    </span>
+                                    금액 : 예약금 - 60,000원, 현지지불금 - 40유로
+                                </p>
+                                <a href="#" class="directReverseBtn">자세히보기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imgWrap"><img src="images/main/best_banenr_02.png" alt="스페인/그라나다이미지"></div>
+                            <div class="textWrap">
+                                <h3>알함브라 집중투어</h3>
+                                <p>
+                                    <span class="none">
+                                        투어코스 : 이사벨라광장 → 알함브라궁전 → 나사리궁전 → 알카사바<br>
+                                        여행일정 : 원데이(3시간) - 투어날짜는 자세히보기를 눌러 선택하세요.<br>
+                                    </span>
+                                    금액 : 예약금 - 20,000원, 현지지불금 - 40유로
+                                </p>
+                                <a href="#" class="directReverseBtn">자세히보기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imgWrap"><img src="images/main/best_banenr_03.png" alt="프랑스/몽생미쉘이미지"></div>
+                            <div class="textWrap">
+                                <h3>몽생미셸 1박2일 레알팩(4성급)</h3>
+                                <p>
+                                    <span class="none">
+                                        투어코스 : 개선문출발 → 몽생미셸 수도원 → 옹플뢰르 → 개선문도착<br>
+                                        여행일정 : 1박 2일 - 투어날짜는 자세히보기를 눌러 선택하세요.<br>
+                                    </span>
+                                    금액 : 예약금 - 40,000원, 현지지불금 - 370유로
+                                </p>
+                                <a href="#" class="directReverseBtn">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="england">
+                            <div class="imgWrap"><img src="images/main/best_banenr_04.png" alt="영국/런던이미지"></div>
+                            <div class="textWrap">
+                                <h3>내셔널갤러리, 영국박물관투어</h3>
+                                <p>
+                                    <span class="none">
+                                        투어코스 : 내셔널갤러리 → 영국박물관집중투어 → 투어종료<br>
+                                        여행일정 : 원데이(종일) - 투어날짜는 자세히보기를 눌러 선택하세요.<br>
+                                    </span>
+                                    금액 : 예약금 - 20,000원, 현지지불금 - 50파운드
+                                </p>
+                                <a href="#" class="directReverseBtn">자세히보기</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imgWrap"><img src="images/main/best_banenr_05.png" alt="그리스/아테나이미지"></div>
+                            <div class="textWrap">
+                                <h3>[5~10월] 아테네 투어</h3>
+                                <p>
+                                    <span class="none">
+                                        투어코스 : 아크로폴리스 → 아레오파고 → 필로파포스언덕 → 프닉스언덕<br>
+                                        여행일정 : 원데이(반일) - 투어날짜는 자세히보기를 눌러 선택하세요.<br>
+                                    </span>
+                                    금액 : 예약금 - 45,000원, 현지지불금 - 0유로
+                                </p>
+                                <a href="#" class="directReverseBtn">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="movie">
+            <h2>투어영상</h2>
+            <div class="innerWrap">
+                <figure>
+                    <iframe width="780" height="440" src="https://www.youtube.com/embed/syS160oINp0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="imgWrap"><img src="images/main/video_banner_01.png" alt="이태리투어영상"></div>
+                            <div class="textWrap">
+                                <h4>이탈리아 바이크투어 영상입니다.</h4>
+                                <p>당신의 상상이 현실이 되는 이탈리아를 지금 자전거투어로 즐겨보세요.</p>
+                                <span class="date">2021.04.30</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">
+                            <div class="imgWrap"><img src="images/main/video_banner_02.png" alt="프랑스투어영상"></div>
+                            <div class="textWrap">
+                                <h4>프랑스 바이크투어 영상입니다.</h4>
+                                <p>잊고 있던 감각이 되살아나는 곳! 여행천국, 예술과 낭만의 도시 프랑스</p>
+                                <span class="date">2021.03.22</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">
+                            <div class="imgWrap"><img src="images/main/video_banner_03.png" alt="영국투어영상"></div>
+                            <div class="textWrap">
+                                <h4>영국 바이크투어 영상입니다.</h4>
+                                <p>과거와 현재가 공존하는 영국, 대영제국의 영광과 민주주의의 발판이 된 영국!</p>
+                                <span class="date">2021.02.16</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="recruit">
+            <div class="innerWrap">
+                <h2>인재채용</h2>
+                <p>
+                    열정과 실천의지를 가지고 있는<br>
+                    <span class="bold">투어 가이드</span>를 기다립니다.
+                </p>
+                <a href="#" class="directReverseBtn">채용공고 바로가기</a>
+            </div>
+        </section>
+        <section id="review">
+            <div class="innerWrap">
+                <h2>투어후기</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main/review_banner_01.png" alt="리뷰이미지01"></a>
+                            <div class="textWrap">
+                                <span class="tourName">[ 이태리 | 바티칸 투어 ] 
+                                    <img src="images/main/review_flag_01.png" alt="이태리국기">
+                                </span>
+                                <h5>이XX 가이드님 너무 감사합니다.</h5>
+                                <p>남부투어에 이어 바티칸 투어도 이xx 가이드님과 함께 했는데 너무~ 좋았습니다.</p>
+                                <hr>
+                                <div class="bottomWrap">
+                                    <span class="starScore">별점 : <span class="star">★★★★★</span></span>
+                                    <span class="date">2022-10-09</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main/review_banner_02.png" alt="리뷰이미지02"></a>
+                            <div class="textWrap">
+                                <span class="tourName">[ 그리스 | 델피&메테오라 1박2일 투어 ]
+                                    <img src="images/main/review_flag_02.png" alt="그리스국기">
+                                </span>
+                                <h5>뒤늦은 후기지만 기억에 남는 투어…</h5>
+                                <p>돌이켜보니 투어 컨셉이 흡사 라디오 방송같은 느낌이었습니다. 긴 이동 때 틀어주신 음악이 좋았습니다.</p>
+                                <hr>
+                                <div class="bottomWrap">
+                                    <span class="starScore">별점 : <span class="star">★★★★☆</span></span>
+                                    <span class="date">2022-10-05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main/review_banner_03.png" alt="리뷰이미지03"></a>
+                            <div class="textWrap">
+                                <span class="tourName">[ 프랑스 | 루브르 집중투어 ]
+                                    <img src="images/main/review_flag_03.png" alt="프랑스국기">
+                                </span>
+                                <h5>정XX 가이드님 덕분에 예술을 알게 되었습니다.</h5>
+                                <p>3박 4일이라는 짧은 파리 일정. 그래도 루브르는 놓치기는 아까워서 예약한 투어신청 후기입니다.</p>
+                                <hr>
+                                <div class="bottomWrap">
+                                    <span class="starScore">별점 : <span class="star">★★★★☆</span></span>
+                                    <span class="date">2022-10-01</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main/review_banner_04.png" alt="리뷰이미지04"></a>
+                            <div class="textWrap">
+                                <span class="tourName">[ 스페인 | 가우디 차량 투어 ]
+                                    <img src="images/main/review_flag_04.png" alt="스페인국기">
+                                </span>
+                                <h5>9월 25일 김XX 가이드님이랑 가우디차량 투어를 다녀왔습니다.</h5>
+                                <p>5년 전에도 유로바이크투어에서 다른 투어를 신청하고 들었던 것이 좋아서 다시 투어신청을 하게 되었습니다.</p>
+                                <hr>
+                                <div class="bottomWrap">
+                                    <span class="starScore">별점 : <span    class="star">★★★★★</span></span>
+                                    <span class="date">2022-09-28</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main/review_banner_05.png" alt="리뷰이미지05"></a>
+                            <div class="textWrap">
+                                <span class="tourName">[ 영국 | 런던 클래식A 투어 ]
+                                    <img src="images/main/review_flag_05.png" alt="영국국기">
+                                </span>
+                                <h5>영국박물관이 이해가 쏙쏙되네요…</h5>
+                                <p>혼자서 왔으면 아무것도 몰랐을 내용들을 섬세하면서도 재미있게 설명해주셔서 좋았습니다.</p>
+                                <hr>
+                                <div class="bottomWrap">
+                                    <span class="starScore">별점 : <span class="star">★★★★★</span></span>
+                                    <span class="date">2022-09-25</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="images/main/review_banner_06.png" alt="리뷰이미지06"></a>
+                            <div class="textWrap">
+                                <span class="tourName">[ 이태리 | 스마트 베네치아투어 ]
+                                    <img src="images/main/review_flag_01.png" alt="이태리국기">
+                                </span>
+                                <h5>베네치아 투어의 이XX가이드님 정말 감사합니다.</h5>
+                                <p>세상에 없는 도시 베네치아를 가이드 투어없이 여행하는 것은 참 어려운 여행일 것 같습니다.</p>
+                                <hr>
+                                <div class="bottomWrap">
+                                    <span class="starScore">별점 : <span class="star">★★★★☆</span></span>
+                                    <span class="date">2022-09-18</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <div id="board">
+            <section id="notice">
+                <div class="noticeWrap">
+                    <h2>공지사항</h2>
+                    <a href="#" class="more">바로가기</a>
+                    <ul>
+                        <li>
+                            <a href="#">[이탈리아] 이탈리아 스마트 프라이빗 투어를 오픈합니다.</a>
+                            <span class="date">2022.10.09</span>
+                        </li>
+                        <li>
+                            <a href="#">[프랑스] 카카오톡 채널 운영안내</a>
+                            <span class="date">2022.10.05</span>
+                        </li>
+                        <li>
+                            <a href="#">[스페인] 나에게 맞는 가우디 투어는?</a>
+                            <span class="date">2022.10.01</span>
+                        </li>
+                        <li>
+                            <a href="#">[독일] 제3회 유로바이크투어 클래식 음악회를 개최합니다.</a>
+                            <span class="date">2022.09.31</span>
+                        </li>
+                        <li>
+                            <a href="#">[체코] 체코 프라하버스 투어 오픈 기념 이벤트!!!</a>
+                            <span class="date">2022.09.27</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="consult">
+                <div class="consultWrap">
+                    <h2>고객상담</h2>
+                    <a href="#" class="more">바로가기</a>
+                    <form action="#">
+                        <fieldset>
+                            <legend>고객상담 폼</legend>
+                            <div class="title">국가</div>
+                            <div class="dropdownMenu left">
+                                <button type="button">
+                                    <span class="text">국가선택</span>
+                                    <img src="images/main/dropdown_arrow.svg" alt="드롭다운아이콘">
+                                </button>
+                                <ul>
+                                    <li><a href="#">이태리</a></li>
+                                    <li><a href="#">프랑스</a></li>
+                                    <li><a href="#">스페인</a></li>
+                                    <li><a href="#">영국</a></li>
+                                    <li><a href="#">그리스</a></li>
+                                    <li><a href="#">동유럽</a></li>
+                                    <li><a href="#">튀르키예</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </div>
+                            <div class="title">문의종류</div>
+                            <div class="dropdownMenu">
+                                <button type="button">
+                                    <span class="text">문의선택</span>
+                                    <img src="images/main/dropdown_arrow.svg" alt="드롭다운아이콘">
+                                </button>
+                                <ul>
+                                    <li><a href="#">비용관련</a></li>
+                                    <li><a href="#">예약관련</a></li>
+                                    <li><a href="#">여행자보험</a></li>
+                                    <li><a href="#">환불관련</a></li>
+                                    <li><a href="#">기타</a></li>
+                                </ul>
+                            </div>
+                            <label for="customerName" class="title">이름</label>
+                            <input type="text" id="costomerName" class="inputBox left" placeholder="이름입력">
+                            <label for="customerPhone" class="title">전화번호</label>
+                            <input type="tel" id="customerPhone" class="inputBox" placeholder="전화번호입력">
+                            <label for="substance" class="title">상담내용</label>
+                            <textarea id="substance" rows="3" placeholder="상담내용을 입력하세요."></textarea>
+                            <div class="bottomWrap">
+                                <input type="checkbox" id="agreeChk">
+                                <label for="agreeChk">개인정보 수집 및 이용 제공에 동의합니다.</label>
+                                <br>
+                                <button type="submit" class="directReverseBtn">문의하기</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <footer id="footer">
+            <div class="innerWrap">
+                <h1><img src="images/common/footer_logo.svg" alt="유로바이크투어로고"></h1>
+                <div class="textWrap">
+                    <nav class="fNav">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li class="mnone"><a href="#">이메일무단수집거부</a></li>
+                            <li class="mnone"><a href="#">사이트맵</a></li>
+                            <li class="pcnone"><a href="tel:1588-1588">고객센터</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="bottomText">
+                        <li>서울특별시 강남구 강남대로 00, XX타워 001,002호</li>
+                        <li>사업자등록번호 : XXX-XX-XXXXXX</li>
+                        <li>대표 : XXX</li>
+                    </ul>
+                    <p>COPYRIGHT &copy; EUROBIKETOUR.KR.<br> All rights reserved.</p>
+                </div>
+                <nav class="snsNav">
+                    <ul>
+                        <li><a href="#">페이스북</a></li>
+                        <li><a href="#">인스타그램</a></li>
+                        <li><a href="#">유튜브</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <aside id="scrollBtn">
+            <a href="#">
+                <img src="images/common/scroll_btn.svg" alt="스크롤탑버튼">
+            </a>
+        </aside>
+    </body>
+</html>

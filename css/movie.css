@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* movie */
+#movie{width: 100%; padding: 120px 0;}
+#movie h2{text-align: center;}
+#movie .innerWrap{display: flex;}
+#movie figure{width: 66.66%; padding-right: 10px;}
+#movie iframe{display: block; width: 100%; height: 440px;}
+#movie ul{display: flex; flex-direction: column; justify-content: space-between; width: 33.33%; height: 440px; padding-left: 10px;}
+#movie .line{width: 100%; height: 1px; background-color: #ccc;}
+#movie a{display: flex;}
+#movie a > div{width: 50%;}
+#movie a > .imgWrap{padding-right: 20px;}
+#movie a > .textWrap{padding:  5px 0;}
+#movie img{display: block; width: 100%; height: 100%; object-fit: cover;}
+#movie h4{width: 100%; height: 1.5rem; line-height: 1.5rem; margin-bottom: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+#movie p{width: 100%; height: 3rem; margin-bottom: 8px; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.5rem;}
+
+
+
+/* table & mobile */
+@media screen and (max-width:1023px) {
+    #movie{padding: 60px 0;}
+    #movie figure{width: 60%;}
+    #movie ul{width: 40%;}
+    
+}
+
+@media screen and (max-width:743px) {
+    #movie .innerWrap{flex-wrap: wrap;}
+    #movie ul{display: block; width: 100%; padding-left: 0; height: auto;}
+    #movie .line{margin: 10px 0;}
+    #movie a > .imgWrap{ padding-right: 10px;}
+    #movie a > .textWrap{display: flex; flex-direction: column; justify-content: space-evenly;}
+    
+    #movie figure{position: relative; width: 100%; padding-right: 0; padding-top: 56.25%; margin-bottom: 20px;}
+    #movie iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+}

@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* board */
+#board{width: 100%; display: flex;}
+
+/* notice */
+#notice{width: 50%; padding: 120px 0; background-color: #0957c3;}
+#notice::after{content: ''; display: block; clear: both;}
+#notice .noticeWrap{position: relative; float: right; width: 606px; max-width: 100%; padding-right: 16px; padding-left: 16px;}
+#notice h2, #notice .more{color: #fff;}
+#notice h2::after{position: absolute; right: 16px; top: 43px; width: calc(100% - 240px); height: 1px; background-color: #fff; content: '';}
+#notice .more::after{content: url(../images/main/more_btn_white.svg);}
+#notice li{width: 100%; height: 45px; margin-bottom: 32px; border-bottom: 1px solid rgba(255, 255, 255, 1.5); line-height: 44px;}
+#notice li:last-child{margin-bottom: 0;}
+#notice li a{float: left; width: 70%; height: 100%; overflow: hidden; color: #fff; font-size: 1.125rem; white-space: nowrap; text-overflow: ellipsis;
+}
+#notice li .date{float: right; color: rgba(255, 255, 255, 0.5);}
+#notice li .date::after{margin-left: 10px; position: relative; top: 2px; content: url(../images/main/notice_arrow.svg);}
+
+/* consult */
+#consult{width: 50%; padding: 120px 0; background-color: rgba(9, 87, 195, 0.1);}
+#consult .consultWrap{position: relative; width: 606px; max-width: 100%; padding-left: 16px; padding-right: 16px;}
+#consult h2::after{position: absolute; right: 16px; top: 43px; width: calc(100% - 240px); height: 1px; background-color: #0957c3; content: '';}
+#consult legend{position: absolute; left: -999em;} 
+#consult fieldset{width: 100%; display: flex; flex-wrap: wrap;}
+#consult .title{display: none;}
+#consult fieldset > *{width: 100%; height: 45px; margin-bottom: 10px;}
+#consult fieldset > textarea{height: 95PX; border: 1px solid #D2D2D2; padding: 10px 15px; color: #999; resize: none;}
+#consult fieldset > textarea::placeholder{color: #D2D2D2;}
+#consult .inputBox{border: 1px solid #D2D2D2; padding: 0 15px; color: #999;}
+#consult .inputBox::placeholder{color: #D2D2D2;}
+#consult .bottomWrap{width: 100%;height: auto; text-align: center; margin-bottom: 0;}
+#agreeChk{margin-bottom: 20px;}
+#consult .dropdownMenu{position: relative;}
+#consult .inputBox{border: 1px solid #D2D2D2; padding: 0 15px; color: #999;}
+#consult .dropdownMenu button{width: 100%; height: 100%; border: 1px solid #d2d2d2; padding: 0 15px; background-color: #fff;}
+#consult .dropdownMenu .text{float: left; color: #D2D2D2;}
+#consult .dropdownMenu button img{float: right; position: relative; top: 7px;}
+#consult .dropdownMenu ul{display: none; position: absolute;left: 0; top: 45px; z-index: 50; width: 100%; border: 1px solid#999; border-top: none; padding: 10px 15px; background-color: #fff; line-height: 28px;}
+#consult .dropdownMenu li{color: #999;}
+
+#consult .dropdownMenu button.active{border: 1px solid #999;}
+#consult .dropdownMenu button.active .text{color: #999;}
+#consult .dropdownMenu button.active img{transform: rotate(180deg);}
+
+
+
+
+/* desktop */
+@media screen and (min-width:1024px){
+    #consult fieldset > * {margin-bottom: 24px;}
+    #consult .title{display: block; width: 80px; color: #333; font-size: 1.125rem; line-height: 45px; font-weight: 700;}
+    #consult .inputBox, #consult .dropdownMenu{width: calc(50% - 90px);}
+    #consult .left{margin-right: 20px;}
+
+    #consult fieldset > textarea{width: calc(100% - 80px);}
+
+}
+
+/* large desktop */
+@media screen and (min-width:1212px){
+    #notice .more{right: 50px;}
+    #notice .noticeWrap{padding-right: 50px;}
+    #notice h2::after{right: 50px; width: calc(100% - 270px);}
+
+    #consult .consultWrap{padding-left: 50px;}
+    #consult h2::after{right: 16px; width: calc(100% - 270px);}
+}
+
+/* tablet */
+@media screen and (max-width:1023px){
+    #notice, #consult{padding: 60px 0;}
+    #notice li a{width: 60%;}
+    #notice h2::after, #consult h2::after{top:36px; width: calc(100% - 210px);}
+}
+
+
+@media screen and (max-width:743px){
+    #board{flex-wrap: wrap;}
+    #notice, #consult{width: 100%;}
+    #notice .noticeWrap, #consult .consultWrap{width: 100%;}
+
+}
+@media screen and (max-width:500px){
+    #notice h2::after, #consult h2::after{top:32px; width: calc(100% - 190px);}
+}
+@media screen and (max-width:375px){
+    #notice h2::after, #consult h2::after{top:28px; width: calc(100% - 170px);}
+}
+@media screen and (max-width:320px){
+    #notice h2::after, #consult h2::after{top:24px; width: calc(100% - 150px);}
+    #notice .more::after{content: url(../images/main/more_btn_white_small.svg);}
+}

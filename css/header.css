@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/* header */
+#header{position: fixed; top: 0; left: 0; z-index: 5000; width: 100%; height: 80px; background-color: #333;}
+#header .innerWrap{display: flex; height: 100%; justify-content: space-between; align-items: center;}
+
+/* desktop */
+@media screen and (min-width:1024px) {
+    /* none part */
+    .panelIcon, .searchICon{display: none;}
+    
+    /* view part */
+    #header h1 img {height: 40px;}
+    #header .tNav ul{display: flex;}
+    #header .tNav li{height: 20px; line-height: 20px;}
+    #header .tNav li:first-child{position: relative; margin-right: 20px;}
+    #header .tNav li:first-child::after{position: absolute; right: -10px; top: 7px; width: 1px; height: 10px; background-color: #ccc; content: ''; }
+    #header .tNav a{color: #ccc; font-size: 0.875rem; }
+    #header .gnb{height: 100%;}
+    #header .gnb > ul{display: flex; height: 100%;}
+    #header .gnb > ul > li{position: relative; height: 100%;}
+    #header .gnb .mainNav{position: relative; display: block; width: 120px; height: 100%; color: #fff; font-size: 1.125rem; text-align: center; line-height: 80px;}
+    #header .gnb .mainNav::after{position: absolute; bottom: 7px; left: 0; right: 0; margin: 0 auto; width: 15px; height: 15px; border-bottom: 3px solid transparent; line-height: 15px; content: '▼'; color: #ff8a3c; font-size: 0.875rem; opacity: 0;}
+    #header .gnb li:hover .mainNav{color: #ff8a3c; border-bottom: 1px solid #ff8a3c;}
+    #header .gnb li:hover .mainNav::after{opacity: 1;}
+    
+    /* mainNav active */
+    #header .gnb .mainNav.active{color: #ff8a3c; border-bottom: 3px solid #ff8a3c;}
+    #header .gnb .mainNav.active::after{opacity: 1;}
+    
+
+    #header .gnb .subNav{display: none; position: absolute; top: 80px; left: 0; width: 100%; padding: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); background-color: #fff; text-align: center;}
+    #header .gnb .subNav a{font-size: 0.875rem; line-height: 40px; }
+    #header .gnb .subNav a:hover{color: #0957c3;}
+}
+
+/* large desktop */
+@media screen and (min-width:1212px) {
+    #header h1 img {height: 50px;}
+}
+
+
+
+/* tablet & mobile */
+@media screen and (max-width:1023px) {
+    
+    /* view part */
+    #header{height: 60px; }
+    #header h1{position: relative; z-index: 5200;}
+    #header h1 img{display: block; height: 32px; }
+    #header .panelIcon{position: relative; width: 32px; height: 24px; z-index: 5300; transition: 0.2s;}
+    #header .panelIcon span{position: absolute; left: 0; width: 100%; height: 4px; background-color: #fff; transition: 0.2s;}
+    #header .panelIcon span:nth-child(1){top: 0px; }
+    #header .panelIcon span:nth-child(2){top: 10px; }
+    #header .panelIcon span:nth-child(3){top: 20px;}
+
+    /* panelIcon active */
+    #header .panelIcon.active{transform: rotate(45deg); transition-delay: 0.4s;}
+    #header .panelIcon.active span:nth-child(2){transform: scaleX(0);}
+    #header .panelIcon.active span:nth-child(1){top: 10px; transition-delay: 0.2s;}
+    #header .panelIcon.active span:nth-child(3){top: 10px; transform: rotate(90deg); transition-delay: 0.2s;}
+
+
+
+    #header .searchICon img{display: block;}
+
+    #header .gnb{position: fixed; top: 0; left: -100%;/* 처음엔 화면 밖에 나가게 처리 */ z-index: 5100; width: 100%; height: 100%; padding: 16px; padding-top: 60px; background-color: #333; transition: 0.6s ease-out;}
+    #header .gnb.active{left: 0;}/* 화면 안으로 들어오게 처리 */
+
+    #header .gnb > ul{width: 100%; border-top: 1px solid #ccc;}
+    #header .gnb .mainNav{position: relative; display: block; width: 100%; height: 50px; border-bottom: 1px solid #ccc; padding: 0 16px; line-height: 49px; font-size: 1.25rem; color: #fff; font-weight: 700;}
+    #header .gnb .mainNav::after{position: absolute; right: 16px; content: url(../images/common/panel_arrow.svg); transition: 0.3s;}
+
+    /* mainNav active */
+    #header .gnb .mainNav.active::after{transform: rotate(180deg); }
+
+    
+    #header .gnb .subNav{display: none; position: relative; top: -1px; width: 100%; padding: 10px 16px; border-top: 1px solid #ff8a3c; background-color: #000;}
+    #header .gnb .subNav a{display: block; width: 100%; height: 40px; line-height: 40px; color: #fff;font-size: 1.125rem;}
+
+    #header .tNav{position: fixed; bottom: 16px; left: -100%; z-index: 5400; width: 100%; height: 50px; padding: 16px; transition: 0.6s ease-out/* gnb와 시간차 똑같이 처리 */;}
+    #header .tNav.active{left: 0;}
+    #header .tNav ul{width: 100%; display: flex; justify-content: center; flex-direction: row-reverse;}
+    #header .tNav a{display: block; width: 165px; height: 50px; text-align: center; line-height: 48px; font-size: 1.25rem; color: #fff; font-weight: 700;}
+    #header .tNav li:first-child{margin-left: 20px;}
+    #header .tNav li:first-child a{background-color: #0957c3; border: 1px solid #0957c3; }
+    #header .tNav li:last-child a{ border: 1px solid #fff; }
+}
+
+
+@media screen and (max-width:375px){
+    #header .tNav ul{justify-content: space-between;}
+    #header .tNav li:first-child{margin-left: 0;}
+}
+
+
+
+/* iphone5 */
+@media screen and (max-width:320px){
+    #header .tNav a{width: 135px;}
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/* vision */
+#vision{width: 100%; padding: 120px 0; background-image: url(../images/main/vision_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center calc(100% + 10vw); text-align: center;}
+#vision h2 .none{color: #333; font-size: 48px; font-family: 'GmarketSans';}
+#vision p{line-height: 1.8; margin-bottom: 80px;}
+
+/* tablet & mobile */
+@media screen and (max-width:1023px) {
+    #vision{padding: 60px 0; }
+    #vision h2 .none{font-size: 40px;}
+    #vision p{margin-bottom: 30px;}
+}
+/* mobile */
+@media screen and (max-width:500px) {
+    #vision .none{display: none;}
+}
